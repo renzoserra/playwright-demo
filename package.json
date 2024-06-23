@@ -1,0 +1,19 @@
+{
+  "name": "demo-playwright1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:dev": "cross-env NODE_ENV=dev npx playwright test",
+    "test:QA": "cross-env NODE_ENV=QA npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5"
+  }
+}
