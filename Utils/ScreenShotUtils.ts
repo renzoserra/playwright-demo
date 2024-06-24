@@ -13,7 +13,7 @@ export class ScreenShotsUtils {
         const screenshotPath = `screenshots/${fileName}.png`;
 
         // Tomar una captura de pantalla completa
-        await this.page.screenshot({ path: screenshotPath });
+        await this.page.screenshot({ path: screenshotPath, fullPage:true },);
         console.log(`Screenshot saved as ${screenshotPath}`);
 
         // Adjuntar la captura de pantalla al reporte
