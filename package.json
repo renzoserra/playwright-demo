@@ -4,7 +4,14 @@
   "main": "index.js",
   "scripts": {
     "test:dev": "cross-env NODE_ENV=dev npx playwright test",
-    "test:QA": "cross-env NODE_ENV=QA npx playwright test"
+    "test:QA": "cross-env NODE_ENV=QA npx playwright test",
+
+    "test:debug": "npx playwright test --debug",
+    "test:all": "npx playwright test",
+
+    "test:critical": "npx playwright test --grep @CriticalPath",
+    "test:smoke": "npx playwright test --grep @SmokeTest",
+    "test:tagged": "npx playwright test --grep @tagname"
   },
   "keywords": [],
   "author": "",

@@ -3,10 +3,6 @@ import { test, expect } from '@playwright/test';
 
 
 test.beforeEach('Open Browser', async ({page})=>{
-  await page.setViewportSize({
-    width: 1280,
-    height: 720,
-  });
   await page.goto('https://www.mercadolibre.cl/');
 
 })

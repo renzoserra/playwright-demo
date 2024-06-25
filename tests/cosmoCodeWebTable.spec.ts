@@ -2,10 +2,6 @@ import { test, expect } from '@playwright/test';
 import { webtable } from '../pages/cosmocode/WebTable';
 
 test.beforeEach('Open Browser', async ({page})=>{
-    await page.setViewportSize({
-      width: 1280,
-      height: 720,
-    });
     await page.goto('https://cosmocode.io/automation-practice-webtable/');
   })
   test.afterEach('Close browser',async ({page})=>{
