@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test demoQABooks.spec.ts ##Edit for an specific test
+      run: npm run test:all uploadFile.spec.ts ##Edit for an specific test
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
